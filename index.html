@@ -50,6 +50,18 @@
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
         }
+        ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        ul li::before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
         p {
             font-size: 1.1em;
             color: #666;
@@ -72,8 +84,14 @@
             border-radius: 10px;
         }
         img:hover {
-            transform: scale(1.05);
+            transform: scale(1.2);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
         }
         footer {
             text-align: center;
@@ -92,98 +110,124 @@
 
         <div class="card">
             <div class="section-title">Organisational Governance:</div>
-            <p>CEO has a clear business strategy for the business. However, roles and responsibilities for cyber security haven’t been defined. They’re assigned to the IT team. There is no cyber security strategy.</p>
+            <ul>
+                <li>CEO has a clear business strategy for the business. However, roles and responsibilities for cyber security haven’t been defined. They’re assigned to the IT team. There is no cyber security strategy.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Asset Management:</div>
-            <p>The IT team has a spreadsheet with serial numbers of laptops.<br>
-            The spreadsheet includes the model of each machine and details about the warranty.<br>
-            Forbes Solutions uses Microsoft Office 365 and relies exclusively on Software-as-a-Service applications.<br>
-            All data is in Microsoft Azure cloud.<br>
-            The IT team uses a Secure Operating Environment (SOE) to image all their laptops with the latest Windows desktop version.</p>
+            <ul>
+                <li>The IT team has a spreadsheet with serial numbers of laptops.</li>
+                <li>The spreadsheet includes the model of each machine and details about the warranty.</li>
+                <li>Forbes Solutions uses Microsoft Office 365 and relies exclusively on Software-as-a-Service applications.</li>
+                <li>All data is in Microsoft Azure cloud.</li>
+                <li>The IT team uses a Secure Operating Environment (SOE) to image all their laptops with the latest Windows desktop version.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Business Continuity and Disaster Recovery:</div>
-            <p>The IT team conducts regular disaster recovery testing.<br>
-            The IT team has clear and documented business continuity plans.<br>
-            The IT team takes regular backups. Backups get tested periodically.</p>
+            <ul>
+                <li>The IT team conducts regular disaster recovery testing.</li>
+                <li>The IT team has clear and documented business continuity plans.</li>
+                <li>The IT team takes regular backups. Backups get tested periodically.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Vulnerability Management:</div>
-            <p>Forbes Solutions has purchased Qualys vulnerability scanner.<br>
-            The IT team uses Qualys on an ad-hoc basis.<br>
-            There is no formal vulnerability management program in place.<br>
-            Large number of high and severe vulnerabilities reported by Qualys.</p>
+            <ul>
+                <li>Forbes Solutions has purchased Qualys vulnerability scanner.</li>
+                <li>The IT team uses Qualys on an ad-hoc basis.</li>
+                <li>There is no formal vulnerability management program in place.</li>
+                <li>Large number of high and severe vulnerabilities reported by Qualys.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Risk Management:</div>
-            <p>Forbes Solutions has a risk team that performs financial risk activities.<br>
-            There is no technology or cyber risk process at Forbes Solutions.</p>
+            <ul>
+                <li>Forbes Solutions has a risk team that performs financial risk activities.</li>
+                <li>There is no technology or cyber risk process at Forbes Solutions.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Third Party Risk Management:</div>
-            <p>Forbes Solutions doesn’t perform any third-party risk management.<br>
-            Contracts are reviewed by procurement and finance, not IT.</p>
+            <ul>
+                <li>Forbes Solutions doesn’t perform any third-party risk management.</li>
+                <li>Contracts are reviewed by procurement and finance, not IT.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Identity and Access Management:</div>
-            <p>Forbes Solutions uses Microsoft Active Directory to manage users and groups.<br>
-            There is no privileged access management solution in place.<br>
-            Admin account password is shared with a few senior members of the IT team.<br>
-            Access to resources is granted upon request.<br>
-            The organisation does not use two-factor authentication for login.<br>
-            Complex login passwords are used.<br>
-            Employees use a VPN solution to login remotely when required.</p>
+            <ul>
+                <li>Forbes Solutions uses Microsoft Active Directory to manage users and groups.</li>
+                <li>There is no privileged access management solution in place.</li>
+                <li>Admin account password is shared with a few senior members of the IT team.</li>
+                <li>Access to resources is granted upon request.</li>
+                <li>The organisation does not use two-factor authentication for login.</li>
+                <li>Complex login passwords are used.</li>
+                <li>Employees use a VPN solution to login remotely when required.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Network Security:</div>
-            <p>The organisation has Palo Alto Next Gen firewalls.<br>
-            The firewalls have been configured by the network.<br>
-            The firewalls get audited every year by the network team.<br>
-            The firewalls get regular updates.<br>
-            The IT team have up to date network diagrams. The diagrams include the cloud environment.<br>
-            The network is segmented using VLANs.</p>
+            <ul>
+                <li>The organisation has Palo Alto Next Gen firewalls.</li>
+                <li>The firewalls have been configured by the network.</li>
+                <li>The firewalls get audited every year by the network team.</li>
+                <li>The firewalls get regular updates.</li>
+                <li>The IT team have up to date network diagrams. The diagrams include the cloud environment.</li>
+                <li>The network is segmented using VLANs.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Physical Security:</div>
-            <p>Forbes Solutions is a highly secure facility, with state-of-the-art CCTV cameras everywhere.<br>
-            Forbes Solutions takes physical security very seriously.<br>
-            They do extensive vetting for all their employees.<br>
-            They have 24/7 monitoring for their research labs and physical facilities.</p>
+            <ul>
+                <li>Forbes Solutions is a highly secure facility, with state-of-the-art CCTV cameras everywhere.</li>
+                <li>Forbes Solutions takes physical security very seriously.</li>
+                <li>They do extensive vetting for all their employees.</li>
+                <li>They have 24/7 monitoring for their research labs and physical facilities.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Data Security:</div>
-            <p>Forbes Solutions doesn’t have a DLP solution.<br>
-            All data resides in Microsoft Azure cloud and Microsoft Office 365.<br>
-            Key critical application is a SaaS service from Horizon Labs.</p>
+            <ul>
+                <li>Forbes Solutions doesn’t have a DLP solution.</li>
+                <li>All data resides in Microsoft Azure cloud and Microsoft Office 365.</li>
+                <li>Key critical application is a SaaS service from Horizon Labs.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Policy:</div>
-            <p>There is one generic IT policy in place.<br>
-            No formal information security policy.<br>
-            There are no data governance policies or information classification.</p>
+            <ul>
+                <li>There is one generic IT policy in place.</li>
+                <li>No formal information security policy.</li>
+                <li>There are no data governance policies or information classification.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Cyber Security Detection and Response:</div>
-            <p>There is no detection or response capability.<br>
-            The IT team responds to alerts from the anti-virus (Microsoft Defender).<br>
-            No SIEM in place.</p>
+            <ul>
+                <li>There is no detection or response capability.</li>
+                <li>The IT team responds to alerts from the anti-virus (Microsoft Defender).</li>
+                <li>No SIEM in place.</li>
+            </ul>
         </div>
 
         <div class="card">
             <div class="section-title">Security Education and Awareness:</div>
-            <p>All employees are required to do an induction web training module. The module includes basic instructions about cyber security.</p>
+            <ul>
+                <li>All employees are required to do an induction web training module. The module includes basic instructions about cyber security.</li>
+            </ul>
         </div>
 
         <!-- Adding Image Banners and Images in Order -->
